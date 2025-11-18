@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: #f5f1e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-container {
+    margin-bottom: 2rem;
+}
+
+.logo {
+    width: 350px;
+    max-width: 90%;
+    height: auto;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+    border-radius: 20px;
+}
+
+.welcome-title {
+    font-size: 4rem;
+    color: #2c3e50;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.button-wrapper {
+    width: 100%;
+}
+
+.action-button {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+    touch-action: manipulation;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.join-button {
+    background: linear-gradient(135deg, #66BB6A 0%, #43A047 100%);
+    color: white;
+    border: 3px solid #FFD700;
+}
+
+.join-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(102, 187, 106, 0.5);
+}
+
+.admin-button {
+    background: linear-gradient(135deg, #AB47BC 0%, #8E24AA 100%);
+    color: white;
+    border: 3px solid #FFD700;
+}
+
+.admin-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(171, 71, 188, 0.5);
+}
+
+.action-button:active {
+    transform: translateY(-1px);
+}
+
+.button-icon {
+    font-size: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.button-text {
+    position: relative;
+    z-index: 1;
+}
+
+.button-hint {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    text-shadow: none;
+    font-weight: 600;
+}
+
+.footer {
+    width: 100%;
+    background: #e8e4db;
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 2px solid #d0ccc3;
+}
+
+.footer p {
+    color: #5a5a5a;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.footer-link {
+    color: #43A047;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #66BB6A;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .welcome-title {
+        font-size: 2.5rem;
+    }
+    
+    .action-button {
+        font-size: 1.2rem;
+        padding: 1.2rem 1.5rem;
+    }
+    
+    .logo {
+        width: 250px;
+    }
+
+    .footer p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-title {
+        font-size: 2rem;
+    }
+    
+    .logo {
+        width: 200px;
+    }
+}
